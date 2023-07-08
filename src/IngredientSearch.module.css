@@ -1,0 +1,107 @@
+.IngredientSearch {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: calc(100vh - 70px);
+  margin-top: 0px;
+  padding-top: 0px;
+  background-color: #f2f2f2;
+}
+
+.IngredientSearch form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 20px;
+  max-width: 800px;
+}
+
+.IngredientSearch label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.IngredientSearch input,
+.IngredientSearch select {
+  padding: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.IngredientSearch select[multiple] {
+  height: 100px;
+}
+
+.IngredientSearch button {
+  padding: 10px 20px;
+  background-color: #7f21eb;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.IngredientSearch button:hover {
+  background-color: #6b1ad4;
+}
+
+.IngredientSearch .IngredientList {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-gap: 20px;
+  max-width: 1200px;
+  justify-content: center;
+}
+
+.IngredientSearch .IngredientList li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.IngredientSearch .IngredientList li img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.IngredientSearch .IngredientList li span {
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #333;
+}
+
+.IngredientSearch .IngredientList li p {
+  margin: 0;
+  color: #666;
+}
+
+@media (max-width: 600px) {
+  .IngredientSearch form {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 960px) {
+  .IngredientSearch .IngredientList {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

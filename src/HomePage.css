@@ -1,0 +1,54 @@
+.HomePage {
+  text-align: center;
+  padding: 40px;
+}
+
+h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 18px;
+  margin-bottom: 40px;
+}
+
+.CallToAction {
+  margin-bottom: 60px;
+}
+
+.Button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #6754e2;
+  color: #fff;
+  font-size: 18px;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.Features {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.Feature {
+  width: 300px;
+  padding: 20px;
+  margin: 20px;
+  background-color: #f2f2f2;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.Feature h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.Feature p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}

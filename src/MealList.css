@@ -1,0 +1,11 @@
+.MealList {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Set 3 columns */
+  gap: 20px;
+}
+
+@media (max-width: 600px) {
+  .MealList {
+    grid-template-columns: repeat(1, 1fr); /* Change to 1 column on smaller screens */
+  }
+}
