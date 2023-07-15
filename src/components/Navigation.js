@@ -7,7 +7,7 @@ function Navigation() {
     <nav className="navbar">
       <ul>
       <li>
-          <Link to="/">HomePage</Link>
+          <Link to="/exploreMeals">HomePage</Link>
         </li>
         <li>
           <Link to="/search-recipes">Search Recipes</Link>

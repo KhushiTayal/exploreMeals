@@ -16,7 +16,7 @@ function App() {
         <Navigation />
         <div className="App__content">
           <Routes>
-            <Route path="/" element={<HomePage />} /> 
+            <Route path="/exploreMeals" element={<HomePage />} /> 
             <Route path="/search-recipes" element={<SearchRecipes />} />
             <Route path="/search-by-nutrients" element={<SearchByNutrients />} />
             <Route path="/search-by-ingredients" element={<SearchByIngredients />} />
