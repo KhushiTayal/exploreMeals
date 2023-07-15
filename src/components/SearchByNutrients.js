@@ -14,7 +14,8 @@ function SearchByNutrients() {
   function handleSearch(e) {
     e.preventDefault();
 
-    const apiKey = "515a5db176df44fe95f8ffe62ab308bd";
+    const apiKey = process.env.REACT_APP_SPOONACULAR_API_KEY;
+    
 
     const { calories, protein, fat, carbohydrate } = nutrientLimits;
 

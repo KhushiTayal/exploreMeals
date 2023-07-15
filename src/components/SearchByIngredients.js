@@ -13,7 +13,8 @@ function SearchByIngredients() {
   function handleSearch(e) {
     e.preventDefault();
 
-    const apiKey = "515a5db176df44fe95f8ffe62ab308bd";
+    const apiKey = process.env.REACT_APP_SPOONACULAR_API_KEY;
+    
 
     const url = `https://api.spoonacular.com/recipes/findByIngredients?ingredients=${ingredients}&number=${number}&limitLicense=${limitLicense}&ranking=${ranking}&ignorePantry=${ignorePantry}&apiKey=${apiKey}`;
 
@@ -46,14 +47,6 @@ function SearchByIngredients() {
           onChange={(e) => setNumber(e.target.value)}
           className="input-field"
         />
-        {/* <label className="checkbox-label">
-          <input
-            type="checkbox"
-            checked={limitLicense}
-            onChange={(e) => setLimitLicense(e.target.checked)}
-          />
-          Limit License
-        </label> */}
         <label className="ranking-label">
           Ranking:
           <select
@@ -65,14 +58,6 @@ function SearchByIngredients() {
             <option value="2">Minimize Missing Ingredients</option>
           </select>
         </label>
-        {/* <label className="checkbox-label">
-          <input
-            type="checkbox"
-            checked={ignorePantry}
-            onChange={(e) => setIgnorePantry(e.target.checked)}
-          />
-          Ignore Pantry
-        </label> */}
         <button type="submit" className="search-button">Search</button>
       </form>
       {mealData && <MealList mealData={mealData} />}

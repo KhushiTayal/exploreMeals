@@ -10,7 +10,8 @@ function IngredientSearch() {
 
   useEffect(() => {
     const fetchIngredients = async () => {
-      const apiKey = "515a5db176df44fe95f8ffe62ab308bd";
+      const apiKey = process.env.REACT_APP_SPOONACULAR_API_KEY;
+
       const url = `https://api.spoonacular.com/food/ingredients/search?query=${searchInput}&number=${number}&sort=${sort}&sortDirection=${sortDirection}&apiKey=${apiKey}`;
 
       try {
@@ -58,7 +59,6 @@ function IngredientSearch() {
             <option value="">None</option>
             <option value="calories">Calories</option>
             <option value="popularity">Popularity</option>
-            {/* Add more sorting options */}
           </select>
         </label>
         <label>
